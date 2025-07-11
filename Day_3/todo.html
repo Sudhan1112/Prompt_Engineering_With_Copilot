@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kalvian To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Kalvian To-Do List</h1>
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="What do you need to do?">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script>
+    // Write your Copilot prompt-based JS here
+    const taskInput = document.getElementById('taskInput');
+    const taskList = document.getElementById('taskList');
+
+    function addTask() {
+      const taskText = taskInput.value.trim();
+      if (taskText === '') return;
+
+      const taskItem = document.createElement('li');
+      taskItem.innerHTML = `
+        <span>${taskText}</span>
+        <button onclick="deleteTask(this)">Delete</button>
+      `;
+      taskList.appendChild(taskItem);
+      taskInput.value = '';
+    }
+
+    function deleteTask(button) {
+      const taskItem = button.parentElement;
+      taskList.removeChild(taskItem);
+    }
+  </script>
+</body>
+</html>
