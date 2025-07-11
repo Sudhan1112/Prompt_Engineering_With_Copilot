@@ -1,0 +1,186 @@
+/* Add a gradient background and center-align text in header */
+header {
+    background: linear-gradient(to right, #3498db, #9b59b6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style the form container */
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style form labels and inputs */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Style the success message */
+  .success-message {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Use grid layout for the menu section */
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .menu-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .menu-item h3 {
+    margin-top: 10px;
+  }
+  
+  .menu-item p {
+    color: #555;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  /* Style each menu item as a card with padding and shadow */
+.menu-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Add a hover effect to each menu item */
+  .menu-item:hover {
+    transform: scale(1.05);
+  } 
+  /* Animate menu item card on hover */
+.menu-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+  /* Style the h2 headings inside menu items */
+.menu-item h2 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  /* Style the h2 headings inside menu items */
+.menu-item h2 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  
+  /* Style the p elements inside menu items */
+  .menu-item p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+/* Add emoji icon before menu item title using pseudo-element */
+.menu-item h2::before {
+    content: "\1F354"; /* Unicode for fork and knife emoji */
+    margin-right: 5px;
+  }
+
+  /* Use CSS variables for primary and secondary colors */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #9b59b6;
+  }
+  
+  /* Apply primary color to links and buttons */
+  a,
+  button {
+    color: var(--primary-color);
+  }
+  
+  /* Apply secondary color to headings and form labels */
+  h1,
+  h2,
+  h3,
+  label {
+    color: var(--secondary-color);
+  }
+.menu-item {
+  box-shadow: var(--card-shadow);
+}
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    .menu {
+      grid-template-columns: 1fr;
+    }
+  }@media (max-width: 600px) {
+  .menu {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  header {
+    padding: 2rem 1rem;
+  }
+}
+/* Style footer with dark background and white text */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #2d2d2d;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+
