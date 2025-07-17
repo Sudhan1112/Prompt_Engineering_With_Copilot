@@ -1,3 +1,98 @@
+/* Card style for sections */
+.card {
+  max-width: 480px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(35,41,70,0.08);
+}
+
+.contact-section h2,
+.movie-section h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-top: 0.25rem;
+}
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px var(--accent-color)22;
+}
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: var(--accent-color);
+}
+
+/* Centered section for button */
+.center-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+.btn-accent {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+.btn-accent:hover {
+  background: var(--accent-color);
+  color: #fff;
+  transform: scale(1.07);
+}
+
+/* Movie list styles */
+.movie-list {
+  list-style: none;
+  padding: 0;
+}
+.movie-list li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f6f7fb;
+  border-radius: 8px;
+  color: var(--primary-color);
+  font-size: 1rem;
+  box-shadow: 0 1px 4px rgba(35,41,70,0.04);
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--primary-color);
+  background: #f6f7fb;
+  font-size: 0.95rem;
+  border-top: 1px solid #eebd3d22;
+}
 /* Global Reset & Theme */
 :root {
   --primary-color: #1f1f2e;

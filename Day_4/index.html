@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prompt Refinement Workshop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main>
+    <h1>Welcome to Prompt Refinement Workshop</h1>
+    <!-- Contact Form Section -->
+    <section aria-labelledby="contact-heading" class="card contact-section">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form id="contactForm" autocomplete="on">
+        <div class="form-group">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" required rows="4" class="form-input"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <!-- Interactive Button Section -->
+    <section class="center-section">
+      <button id="styleMe" class="btn-accent">Click Me</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 Prompt Refinement Workshop
+  </footer>
+
+  <!-- Add movie list -->
+  <section aria-labelledby="movie-heading" class="card movie-section">
+    <h2 id="movie-heading">Movie List</h2>
+    <ul id="movieList" class="movie-list">
+      <!-- Movie items will be added here -->
+        <li>The Matrix</li>
+        <li>Inception</li>
+        <li>Interstellar</li>
+        <li>The Dark Knight</li>
+        <li>Pulp Fiction</li>
+        <li>The Shawshank Redemption</li>
+        <li>Forrest Gump</li>
+        <li>The Godfather</li>
+        <li>The Lord of the Rings: The Fellowship of the Ring</li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

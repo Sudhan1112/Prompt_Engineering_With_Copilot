@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="loginForm">
+      <h2>Login Form</h2>
+
+      <label for="username">Username or Email ID</label>
+      <input type="text" id="username" placeholder="Enter your username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required />
+
+      <div class="show-password">
+        <input type="checkbox" id="show-password" />
+        <label for="show-password">Show Password</label>
+      </div>
+
+      <p id="error" class="error-msg"></p>
+
+      <button type="submit" id="loginBtn">Login</button>
+    </form>
+  </div>
+  <!-- Prompt: Improve accessibility with proper labels and ARIA -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const errorMsg = document.getElementById('error');
+    
+        if (username === '' || password === '') {
+            errorMsg.textContent = 'Please fill in all fields.';
+            return;
+        }
+    
+        // Simulate a successful login
+        window.location.href = 'success.html';
+        });
+    
+        document.getElementById('show-password').addEventListener('change', function() {
+        const passwordField = document.getElementById('password');
+        passwordField.type = this.checked ? 'text' : 'password';
+        });
+    </script>
+  <!-- Adding a script to handle form submission and show/hide password -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const errorMsg = document.getElementById('error');
+    
+        if (username === '' || password === '') {
+            errorMsg.textContent = 'Please fill in all fields.';
+            return;
+        }
+    
+        // Simulate a successful login
+        window.location.href = 'success.html';
+        });
+        document.getElementById('show-password').addEventListener('change', function() {
+        const passwordField = document.getElementById('password');
+        passwordField.type = this.checked ? 'text' : 'password';
+        });
+    </script>
+  <script src="script.js"></script>
+</body>
+</html>
